@@ -23,7 +23,7 @@ header {
 }
 
 header nav a {
-  color: #ffffff;
+  color: #263138;
   font-weight: 600;
   padding: 32px;
   text-decoration: none;
@@ -53,6 +53,7 @@ h2 {
 .paragrafo {
   line-height: 150%;
   margin-bottom: 32px;
+  text-align: justify;
 }
 
 .botao {
@@ -73,16 +74,28 @@ h2 {
 
 /* Seção clínica */
 #servicos {
-  display: flex;
   gap: 64px;
   align-items: center;
   padding: 25px 80px 30px 70px;
   background-color: var(--cor-secundaria);
 }
 
-#servicos li {
-  margin-bottom: 16px;
-  margin-left: 32px;
+.container {
+  display: flex;
+  gap: 80px;
+}
+
+.servicos_dashboard {
+  align-items: flex-start;
+}
+
+.servicos_treinamentos {
+  align-items: flex-end;
+}
+
+#servicos h1 {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 /* Seção petshop e farmácia */
@@ -146,6 +159,11 @@ h2 {
   padding: 24px;
 }
 
+#quem {
+  padding: 64px 80px;
+  text-align: center;
+}
+
 /* Rodapé */
 footer {
   /* background-color: rgba(255, 152, 108, 0.25); */
@@ -181,9 +199,7 @@ footer p a {
   text-decoration: none;
 }
 
-#copyright {
-  background-color: #263138;
-  color: #ffffff;
-  padding: 24px;
-  text-align: center;
+.citacao {
+  text-align: justify;
+  font-weight: 600;
 }
